@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#151918" />
+    <title>Lumen Shift · Light Register Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#instrument">Skip to puzzle</a>
+    <header>
+      <a class="brand" href="./"
+        ><span class="brand-mark">▥</span> LUMEN SHIFT</a
+      ><span class="edition">A SMALL INSTRUMENT FOR CHANGING YOUR MIND</span
+      ><button id="help-toggle" aria-expanded="false" aria-controls="help">
+        How it works <span>↗</span>
+      </button>
+    </header>
+    <main>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">GAME OFF 2026 / SHIFT</p>
+          <h1>A little shift.<br /><em>A different light.</em></h1>
+          <p class="lede">
+            Slide the shutters. Watch the signal change.<br />Find the pattern
+            that brings the receiver to life.
+          </p>
+        </div>
+        <div class="hero-meter" aria-hidden="true">
+          <span>01 0 1</span>
+          <div class="meter-lights">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>THINK SLOWLY.<br />THE LIGHT WILL WAIT.</p>
+        </div>
+      </section>
+      <section id="help" class="help" hidden>
+        <div>
+          <h2>Every shutter changes the signal.</h2>
+          <p>
+            A bright shutter dot flips the incoming lamp: on becomes off, off
+            becomes on. A dim dot leaves it alone. This is XOR: two lights
+            cancel.
+          </p>
+        </div>
+        <div>
+          <h3>The small arrow turns the incoming signal.</h3>
+          <p>
+            It happens before that row's shutter. Shift a shutter left or right;
+            its last dot wraps around. Match every marked reading, including the
+            bottom receiver.
+          </p>
+        </div>
+        <div>
+          <h3>There is time to experiment.</h3>
+          <p>
+            Select a row, then use ← / → or the on-screen buttons. ↑ / ↓ selects
+            another row. Undo, redo and exact-search hints are always available.
+            No timers, no penalty for thinking.
+          </p>
+        </div>
+      </section>
+      <section class="workspace" id="instrument" aria-labelledby="level-title">
+        <aside class="chapters">
+          <p class="eyebrow">THE NIGHT'S WORK</p>
+          <nav id="level-nav" aria-label="Choose a puzzle"></nav>
+          <div class="legend">
+            <span><i class="lit"></i> ON</span><span><i></i> OFF</span
+            ><span>⊕ FLIP</span>
+          </div>
+          <p class="storage" id="storage-status">
+            Progress stays in this browser.
+          </p>
+          <div class="save-buttons">
+            <button id="export">Export progress ↓</button
+            ><button id="import">Import progress ↑</button
+            ><input
+              id="save-file"
+              type="file"
+              accept="application/json,.json"
+              hidden
+            />
+          </div>
+        </aside>
+        <div class="machine">
+          <div class="machine-heading">
+            <div>
+              <p class="eyebrow" id="level-number"></p>
+              <h2 id="level-title"></h2>
+              <p id="level-note"></p>
+            </div>
+            <span class="move-count"><b id="moves">00</b> SHIFTS</span>
+          </div>
+          <div id="board"></div>
+          <div class="controls">
+            <button class="shift" id="shift-left">← Shift left</button>
+            <div class="row-selector" id="selected-name"></div>
+            <button class="shift" id="shift-right">Shift right →</button>
+          </div>
+          <div class="secondary">
+            <button id="undo">↶ Undo</button><button id="redo">Redo ↷</button
+            ><button id="hint">A small hint ✧</button
+            ><button id="reset">Reset</button
+            ><label class="sound"
+              ><input id="sound" type="checkbox" /> Soft sound</label
+            >
+          </div>
+          <div class="message" id="message" role="status" aria-live="polite">
+            Select a shutter to begin.
+          </div>
+          <div id="outcome" class="outcome" hidden>
+            <div>
+              <p class="eyebrow">SIGNAL FOUND</p>
+              <h3>The night is a little brighter.</h3>
+              <p id="result-note"></p>
+            </div>
+            <button id="next">Next instrument →</button>
+          </div>
+        </div>
+      </section>
+      <section class="closing">
+        <span>01 / LOOK</span><span>02 / SHIFT</span
+        ><span>03 / LISTEN TO THE LIGHT</span>
+        <p>Eight small puzzles. One unhurried evening.</p>
+      </section>
+    </main>
+    <footer>
+      <span>LUMEN SHIFT / ORIGINAL PROCEDURAL ART & SOUND</span
+      ><span
+        >AI-assisted development · <a href="docs/competition.md">Jam notes</a> ·
+        <a href="docs/landscape.md">References</a></span
+      >
+    </footer>
+    <noscript
+      >This game needs JavaScript. It makes no remote requests or model
+      calls.</noscript
+    >
+  </body>
+</html>

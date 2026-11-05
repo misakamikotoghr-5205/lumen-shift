@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-11-05",
+  "sources": [
+    {
+      "repository": "gabrielecirulli/2048",
+      "commit": "478b6ec346e3787f589e4af751378d06ded4cbbc",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/gabrielecirulli/2048/478b6ec346e3787f589e4af751378d06ded4cbbc/README.md",
+          "sha256": "3b624490f45eb6315b00bcaac65cefa713678401c42971b0e65cad8d8ff0ccfc"
+        },
+        {
+          "path": "LICENSE.txt",
+          "url": "https://raw.githubusercontent.com/gabrielecirulli/2048/478b6ec346e3787f589e4af751378d06ded4cbbc/LICENSE.txt",
+          "sha256": "57e12c39a6ad9d98b2e451065bfdfbd15fc9e0c2ed3bf4dc1d09acab41ff02fc"
+        }
+      ],
+      "reuse": "comparison only; no code or assets copied"
+    },
+    {
+      "repository": "chrisboyle/sgtpuzzles",
+      "commit": "d1e10eb57dd80af4999e698a9ab31f546e9a0b9d",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/chrisboyle/sgtpuzzles/d1e10eb57dd80af4999e698a9ab31f546e9a0b9d/README.md",
+          "sha256": "226d04a146d18c229db155f3f1a9a41f437241879871f4583e0871b8d7f4f474"
+        },
+        {
+          "path": "LICENCE",
+          "url": "https://raw.githubusercontent.com/chrisboyle/sgtpuzzles/d1e10eb57dd80af4999e698a9ab31f546e9a0b9d/LICENCE",
+          "sha256": "42ad32e495b10a778fa7c935e07326b40ac8d11b400a0919a623bcf2e048e294"
+        }
+      ],
+      "reuse": "comparison only; no code or assets copied"
+    }
+  ]
+}
