@@ -97,10 +97,13 @@ function render() {
   $("#selected-name").textContent = `SHUTTER ${row + 1}`;
   $("#undo").disabled = !state.actions.length;
   $("#redo").disabled = !redo.length;
-  $("#shift-left").disabled = complete;
-  $("#shift-right").disabled = complete;
-  $("#hint").disabled = complete;
-  $("#message").textContent = message;
+  const fullReplay = state.actions.length >= 2000;
+  $("#shift-left").disabled = complete || fullReplay;
+  $("#shift-right").disabled = complete || fullReplay;
+  $("#hint").disabled = complete || fullReplay;
+  $("#message").textContent = fullReplay && !complete
+    ? "Replay limit reached. Undo, export, or reset before another shift."
+    : message;
   $("#outcome").hidden = !complete;
   $("#result-note").textContent =
     `${state.actions.length} ${state.actions.length === 1 ? "shift" : "shifts"}. ${record().hints ? "Search hints used: " + record().hints + "." : "Found without a hint."} No timer was running.`;
@@ -191,7 +194,9 @@ $("#reset").onclick = () => {
 };
 $("#hint").onclick = () => {
   const result = solve(levels[index], state);
-  if (result.status !== "solved" || !result.actions.length) {
+  if (result.status === "replay-limit") {
+    message = "The remaining replay space cannot fit a solution. Undo, export, or reset.";
+  } else if (result.status !== "solved" || !result.actions.length) {
     message =
       "The bounded search did not return a hint. Your puzzle is unchanged.";
   } else {

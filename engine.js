@@ -89,6 +89,8 @@ export function solve(level, state, maxStates = 10000) {
         actions.push(item.action);
         cursor = item.previous;
       }
+      if (actions.length > 2000 - state.actions.length)
+        return { status: "replay-limit", actions: [], visited: seen.size };
       return {
         status: "solved",
         actions: actions.reverse(),

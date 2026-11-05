@@ -175,3 +175,18 @@ test("one-step hint from a partially played board remains replayable", () => {
   for (const action of rest.actions) state = move(l, state, action);
   assert.equal(won(l, state), true);
 });
+test('a hint never promises actions beyond the remaining replay allowance', () => {
+  const level = levels[0];
+  const full = replay(level, Array.from({length: 2000}, () => ({row: 0, direction: 1})));
+  assert.equal(won(level, full), false);
+  const result = solve(level, full);
+  assert.equal(result.status, 'replay-limit');
+  assert.deepEqual(result.actions, []);
+  const near = replay(level, full.actions.slice(0, 1998));
+  const next = solve(level, near);
+  assert.equal(next.status, 'solved');
+  assert.ok(next.actions.length <= 2000 - near.actions.length);
+  let continued = near;
+  for (const action of next.actions) continued = move(level, continued, action);
+  assert.equal(won(level, continued), true);
+});

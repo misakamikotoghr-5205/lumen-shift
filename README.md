@@ -25,6 +25,6 @@ Arrow keys select/shift shutters; equivalent labeled buttons work on touch. Two 
 
 [Competition notes](docs/competition.md) include the official deadline, theme, and AI disclosure. [Landscape](docs/landscape.md) compares established sliding and offline puzzle projects honestly. No upstream game code, art, music, or level data was copied. All application source, CSS art, and synthesized tones were authored here with substantial AI coding assistance; this must be disclosed in the jam submission. There is no in-game AI.
 
-Twelve local tests cover all board solutions, an independent boolean signal reference, reversible shifts, locked rows, replay validation, and bounded hints. They establish local behavior, not cross-device audio latency or a formal jam entry. The game was first developed on 2026-11-05, within the jam window.
+Thirteen local tests cover all board solutions, an independent boolean signal reference, reversible shifts, locked rows, replay validation, and bounded hints. They establish local behavior, not cross-device audio latency or a formal jam entry. The game was first developed on 2026-11-05, within the jam window.
 
 MIT; see [LICENSE](LICENSE).
