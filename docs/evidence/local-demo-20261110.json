@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "project": "lumen-shift",
+  "capture_date_utc": "2026-11-10",
+  "runtime_source_commit": "a3a52464b9b170b7a6e04e4bbd2017453401a2fe",
+  "video": {
+    "file": "docs/media/lumen-shift-local-demo.mp4",
+    "bytes": 2462905,
+    "sha256": "620c607f6c57e8f98da940ddaaa96399a45e83a18b7f12c6bb1fbbcd96a6a065",
+    "duration_seconds": 128.0
+  },
+  "actual_decoded_frames": [
+    {
+      "file": "docs/media/actual-mp4-frame-075s-reimport.png",
+      "bytes": 452065,
+      "sha256": "895ff987a54e29a8e4386edb48a352701780cc647cbe94db70f476d35ed0d44e",
+      "video_time_seconds": 75.0,
+      "segment": 8
+    },
+    {
+      "file": "docs/media/actual-mp4-frame-098s-checkpoint.png",
+      "bytes": 436713,
+      "sha256": "f1e24c8b8175993da0b185c6f31ace6ab1efedd5443e190ddfef6db6bb99a2d8",
+      "video_time_seconds": 98.0,
+      "segment": 10
+    }
+  ],
+  "capture_sequence": [
+    {
+      "segment": 1,
+      "capture_basename": "01-initial.png",
+      "capture_sha256": "acfaea813cb1bf07b479edc248b795c8bc148da485b097c6016a1bba72a8ed54",
+      "crop_ltrb_px": [
+        192,
+        118,
+        1395,
+        1170
+      ],
+      "observed_at_utc": "2026-11-10T11:33:06.288Z",
+      "video_start_seconds": 0.0,
+      "video_end_seconds": 8.0
+    },
+    {
+      "segment": 2,
+      "capture_basename": "02-rules.png",
+      "capture_sha256": "c0d730c730eb5801f2738ee621abbf8bd4960e495d997f569a5c2f8fd46dd4dd",
+      "crop_ltrb_px": [
+        192,
+        555,
+        1395,
+        738
+      ],
+      "observed_at_utc": "2026-11-10T11:33:13.200Z",
+      "video_start_seconds": 8.0,
+      "video_end_seconds": 18.0
+    },
+    {
+      "segment": 3,
+      "capture_basename": "03-hint.png",
+      "capture_sha256": "de50ca3b492566df857ed701344a83a4f64e1c70f624de64c61761c93f128f45",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        992
+      ],
+      "observed_at_utc": "2026-11-10T11:33:43.142Z",
+      "video_start_seconds": 18.0,
+      "video_end_seconds": 30.0
+    },
+    {
+      "segment": 4,
+      "capture_basename": "04-first-light-won.png",
+      "capture_sha256": "0cf75efc19c16a5e94663c853e648fb06d3541a7d7ae10129c0f08fe7ac18037",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1110
+      ],
+      "observed_at_utc": "2026-11-10T11:33:50.720Z",
+      "video_start_seconds": 30.0,
+      "video_end_seconds": 42.0
+    },
+    {
+      "segment": 5,
+      "capture_basename": "05-undo.png",
+      "capture_sha256": "f05569219ebd452ad8d09b314534f3838e5579560aea31a1ce1c5e09facfe4a5",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        992
+      ],
+      "observed_at_utc": "2026-11-10T11:33:56.070Z",
+      "video_start_seconds": 42.0,
+      "video_end_seconds": 52.0
+    },
+    {
+      "segment": 6,
+      "capture_basename": "06-redo.png",
+      "capture_sha256": "529e3a77583cda33ae88d4289565a67735812b5abd879f29870fb326f94ea2d2",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1110
+      ],
+      "observed_at_utc": "2026-11-10T11:34:20.731Z",
+      "video_start_seconds": 52.0,
+      "video_end_seconds": 60.0
+    },
+    {
+      "segment": 7,
+      "capture_basename": "07-reset.png",
+      "capture_sha256": "e796c35decef946606de878c8c812f82de0bd3c259dfc5b642df4c95d5a1436e",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        992
+      ],
+      "observed_at_utc": "2026-11-10T11:36:35.443Z",
+      "video_start_seconds": 60.0,
+      "video_end_seconds": 68.0
+    },
+    {
+      "segment": 8,
+      "capture_basename": "08-reimport.png",
+      "capture_sha256": "3b99890b4d117c55bf3592ecb72c2d23a52bcef59db34ae541acea298b156365",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1110
+      ],
+      "observed_at_utc": "2026-11-10T11:36:49.667Z",
+      "video_start_seconds": 68.0,
+      "video_end_seconds": 82.0
+    },
+    {
+      "segment": 9,
+      "capture_basename": "09-reload-restored.png",
+      "capture_sha256": "16ff68d76d85a6a1335991d5b89d54520b60a131a6adbe090bddf2b8279f79cd",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1110
+      ],
+      "observed_at_utc": "2026-11-10T11:36:53.238Z",
+      "video_start_seconds": 82.0,
+      "video_end_seconds": 92.0
+    },
+    {
+      "segment": 10,
+      "capture_basename": "10-midnight-checkpoint.png",
+      "capture_sha256": "7e2080e30df62779b3ca5db3eda6d0375877dd0e606b67445869bf8b88b866d6",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1170
+      ],
+      "observed_at_utc": "2026-11-10T11:36:56.769Z",
+      "video_start_seconds": 92.0,
+      "video_end_seconds": 104.0
+    },
+    {
+      "segment": 11,
+      "capture_basename": "11-held-breath.png",
+      "capture_sha256": "385c6165a9b3788bae4717b5737c2b779ca00625b1f8eb4c18d3483eeaf12226",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1170
+      ],
+      "observed_at_utc": "2026-11-10T11:36:59.901Z",
+      "video_start_seconds": 104.0,
+      "video_end_seconds": 114.0
+    },
+    {
+      "segment": 12,
+      "capture_basename": "09-reload-restored.png",
+      "capture_sha256": "16ff68d76d85a6a1335991d5b89d54520b60a131a6adbe090bddf2b8279f79cd",
+      "crop_ltrb_px": [
+        192,
+        210,
+        1395,
+        1110
+      ],
+      "observed_at_utc": "2026-11-10T11:36:53.238Z",
+      "video_start_seconds": 114.0,
+      "video_end_seconds": 128.0
+    }
+  ],
+  "qa": {
+    "video_codec": "h264",
+    "width_px": 1920,
+    "height_px": 1080,
+    "frame_rate": "25/1",
+    "pixel_format": "yuv420p",
+    "decoded_video_frames": 3200,
+    "audio": "silent AAC stereo, 48000 Hz; no recorded or synthesized voice",
+    "full_decode_exit_code": 0,
+    "full_decode_stderr_empty": true,
+    "raw_source_images_visually_reviewed": 11,
+    "source_crop_compositions_visually_reviewed": 12,
+    "actual_video_segment_midpoints_checked": 12,
+    "all_midpoints_match_expected_segments": true,
+    "max_mean_absolute_rgb_error": 1.2785111239711935,
+    "actual_midpoint_contact_sheets_visually_reviewed": 12,
+    "full_size_actual_midpoints_visually_reviewed": [
+      5,
+      8,
+      10
+    ],
+    "browser_chrome_accounts_and_notifications_excluded": true
+  },
+  "actual_browser_export": {
+    "bytes": 174,
+    "sha256": "ba59c1a40a285309016153a6525b8c9fd9002bcdab8c450caa89e919c61c0286"
+  },
+  "scope": {
+    "format": "Edited actual local browser stills with English captions",
+    "continuous_recording": false,
+    "first_light_solved": true,
+    "first_light_shifts": 1,
+    "first_light_hints_used": 1,
+    "actual_operations_observed": [
+      "rules opened",
+      "hint without action",
+      "first-board left shift and completion",
+      "Undo",
+      "Redo",
+      "actual export",
+      "reset",
+      "same-file reimport with replay-validation message",
+      "browser reload retaining first-board completion"
+    ],
+    "additional_boards_shown_unsolved": [
+      "Midnight checkpoint",
+      "Held breath"
+    ],
+    "undo_sidebar_marker": "Reported only as visibly remaining in that capture; no mechanism inferred.",
+    "full_eight_board_playthrough_claimed": false,
+    "mobile_coverage_claimed": false,
+    "runtime_model_call_claimed": false,
+    "public_deployment_or_itch_entry_proven": false,
+    "ai_assistance_disclosed": "Codex-assisted original code, procedural visuals, tests and documentation; original source MIT."
+  },
+  "main_operator_review": {
+    "actual_contact_sheets": [
+      1,
+      2
+    ],
+    "full_size_actual_midpoints": [
+      8
+    ],
+    "privacy_and_legibility_passed": true
+  }
+}

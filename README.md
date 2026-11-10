@@ -28,3 +28,7 @@ Arrow keys select/shift shutters; equivalent labeled buttons work on touch. Two 
 Thirteen local tests cover all board solutions, an independent boolean signal reference, reversible shifts, locked rows, replay validation, and bounded hints. They establish local behavior, not cross-device audio latency or a formal jam entry. The game was first developed on 2026-11-05, within the jam window.
 
 MIT; see [LICENSE](LICENSE).
+
+## Local demonstration, November 10
+
+A [128-second captioned local demo](docs/media/lumen-shift-local-demo.mp4) uses selected actual browser stills from November 10, 2026, with silent English explanation and a full-time edited-still label. It shows First light completed in one shift using one hint, Undo/Redo, a real export/reset/import/reload, and the checkpoint/fixed-shutter boards shown unsolved. This is not continuous footage, an eight-board playthrough or an itch.io entry receipt. [Sanitized source and QA evidence](docs/evidence/local-demo-20261110.json) includes capture hashes/crops/times and actual decoded frames for [reimport](docs/media/actual-mp4-frame-075s-reimport.png) and the [unsolved checkpoint board](docs/media/actual-mp4-frame-098s-checkpoint.png). No model runs during gameplay; the video retains the Codex and MIT disclosure.
